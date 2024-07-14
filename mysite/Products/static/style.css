@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+
+
+body{
+    margin: 0px;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow:hidden;
+    height: 50px;
+    position:  relative;
+    top: 30px;
+    left: 300px;
+    
+}
+.navbar a{
+    display: block;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    
+
+}
+.navbar a:hover{
+    color: rgb(255, 102, 0);
+}
+.navbar li{
+    float: left;
+    font-family: sans-serif;
+}
+.header{
+    position: fixed;
+    background-color: rgb(253, 253, 252);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: 0px;
+    border-bottom: 2px solid rgb(73, 73, 73);
+    z-index: 1000;
+}
+
+.search-container {
+    display: block;
+    align-items: center;
+    position: relative;
+    top: 10px;
+} 
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.box{
+    width: 1100px;
+    position:relative;
+    top:100px ;
+    left: 100px;
+    overflow: hidden;
+    background-color: black;
+}
+.slider{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    animation: slide 8s infinite;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-120%);
+    }
+    75%{
+        transform: translateX(-120%);
+    }
+    100%{
+        transform: translateX(-226%);
+    }
+    
+}
+.category{
+    position: relative;
+    top: 120px;
+}
+.category ul{
+    list-style-type: none;
+}
+.category ul li{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    float: left;
+    padding: 30px;
+    margin: 35px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
+}
+.card1{
+    background-image: url(assets/card1.webp);
+    background-size: cover;
+    
+}
+.card1 a {
+    display: block; /* Make the <a> element a block-level element */
+    width: 100%; /* Make the <a> element take up the full width of the <li> */
+    height: 100%; /* Make the <a> element take up the full height of the <li> */
+    text-indent: -9999px; /* Hide the text in the <a> element */
+}
+.card2{
+    background-image: url(card2.webp);
+    background-size: cover;
+}
+.card3{
+    background-image: url(assets/card3.jpeg);
+    background-size: cover;
+}
+.card4{
+    background-image: url(assets/card4.webp);
+    background-size: cover;
+}
+.category ul li:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+}
+.category h1{
+    display: flex;
+    font-family: "Fira Sans Condensed", sans-serif;
+    justify-content: center;
+    font-weight: 600;
+    color: rgb(23, 24, 24);
+    padding: 20px;
+    font-size: 40px;
+}

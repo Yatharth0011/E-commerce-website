@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body bgcolor="white">
+    <div class="header">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a>About</a></li>
+                <li><a>Store</a></li>
+                <li><a>Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="box">
+        <div class="slider">
+            <img src="{% static 'assets/Ex1.webp' %}" alt="img1">
+            <img src="{% static 'assets/Ex2.jpg' %}" alt="img2">
+            <img src="{% static 'assets/Ex1.webp' %}" alt="img1">
+        </div>
+    </div>
+    <div class="category">
+        <h1>Category</h1>
+        <ul>
+            <li class="card1"><a href="gallery.html"></a></li>
+            <li class="card2"><a></a></li>
+            <li class="card3"><a></a></li>
+            <li class="card4"><a></a></li>
+        </ul>
+    </div>
+</body>
+</html>
