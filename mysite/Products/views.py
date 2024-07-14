@@ -4,4 +4,4 @@ from .models import Products
 
 def home(request):
     products = Products.objects.all()  # Fetch all products from the database
-    return render(request, 'home.html', {'Products': Products})
+    return render(request, 'home.html', {'products': Products})

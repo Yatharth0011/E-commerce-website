@@ -157,7 +157,23 @@ body{
     color: rgb(23, 24, 24);
     padding: 20px;
     font-size: 40px;
+    background-color: red;
 }
-.products-section ul{
+.prod{
     font-size: 100px;
+    position: relative;
+    top: 1500px;
+    left: 100px;
+    background-color: red;
+}
+.heading{
+    display: flex;
+    font-family: "Fira Sans Condensed", sans-serif;
+    justify-content: center;
+    font-weight: 1200;
+    color: rgb(23, 24, 24);
+    padding: 20px;
+    font-size: 40px;
+    z-index: 1000;
+    color: tomato;
 }
