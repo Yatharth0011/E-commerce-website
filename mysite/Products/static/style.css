@@ -159,10 +159,25 @@ body{
     font-size: 40px;
 }
 .prod{
-    font-size: 100px;
     position: relative;
-    top: 1500px;
+    top: 150px;
     left: 100px;
+}
+.frame{
+    
+}
+.prod-card{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    float: left;
+    padding: 30px;
+    margin: 35px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    caption-side: bottom;
+    background-color: yellow;
+    
 }
 .heading{
     display: flex;
@@ -173,5 +188,5 @@ body{
     padding: 20px;
     font-size: 40px;
     position: relative;
-    top: 200px;
+    top: 130px;
 }
