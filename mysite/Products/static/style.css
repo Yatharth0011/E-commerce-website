@@ -201,3 +201,12 @@ body{
     font-weight: 500;
     font-style: normal;
 }
+.buy-button{
+    background-color: rgb(255, 0, 76);
+    border-radius: 25px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    height: 50px;
+    width: 90px;
+}

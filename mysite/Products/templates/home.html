@@ -49,7 +49,8 @@
         <h1 class="heading">Products</h1>
         <ul class="prod">
             {% for product in products %}
-            <li class="prod-card"><img class="prod-image" src="{{product.image}}" alt="image001"><p class="prod-details">{{product.name}}<br>{{product.price}}</p></li>
+            <li class="prod-card"><img class="prod-image" src="{{product.image}}" alt="image001">
+                <p class="prod-details">{{product.name}}<br>${{product.price}}<br><button class="buy-button"><img src="{% static 'assets/cart.png' %}">Buy now</button></p></li>
             {% endfor %}
         </ul>
     </div>
