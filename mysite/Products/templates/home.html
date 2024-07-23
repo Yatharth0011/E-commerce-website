@@ -29,6 +29,7 @@
             </ul>
         </nav>
     </div>
+    <div class="content">
     <div class="box">
         <div class="slider">
             <img src="{% static 'assets/Ex1.webp' %}" alt="img1">
@@ -36,23 +37,42 @@
             <img src="{% static 'assets/Ex1.webp' %}" alt="img1">
         </div>
     </div>
-    <div class="category">
+    </div>
+    <div class="cat-head">
         <h1>Category</h1>
+    </div>
+    <div class="category">
         <ul>
             <li class="card1"><a href="gallery.html"></a></li>
             <li class="card2"><a></a></li>
             <li class="card3"><a></a></li>
             <li class="card4"><a></a></li>
+            <li class="card5"><a></a></li>
+            <li class="card6"><a></a></li>
         </ul>
     </div>
-    <div class="products-section">
-        <h1 class="heading">Products</h1>
+    <div class="prod-head"><h1>Products</h1></div>
+    <div class="products">
         <ul class="prod">
             {% for product in products %}
             <li class="prod-card"><img class="prod-image" src="{{product.image}}" alt="image001">
-                <p class="prod-details">{{product.name}}<br>${{product.price}}<br><button class="buy-button"><img src="{% static 'assets/cart.png' %}">Buy now</button></p></li>
+                <p class="prod-details">{{product.name}}<br>${{product.price}}<br><button class="buy-button">Buy now</button></p></li>
             {% endfor %}
         </ul>
     </div>
+    <h1 style="display: flex;font-family: Fira Sans Condensed, sans-serif;justify-content: center;font-weight: 1200;color: rgb(23, 24, 24);font-size: 40px;position: relative;top: 150px;">About us</h1>
+        <div class="about-us">
+            <img class="about-us-img" src="{% static 'assets/about-us-img.webp' %}" alt="image001">
+            <p>Curtains say a lot about you. 
+            They are a reflection of your style & taste and they’re a wonderful
+             way to add color and beauty to your home decor. With us at 
+             Ganga Home Furnishings bring style to your space with long drapes
+              and add a splash of colour to your home. Match them to your ​furniture or
+               choose contrasting colors to add dimension. There’s a lot more that curtains can do
+                to beautify your interiors. Curtains have the power to actually transform a room—a few 
+                well-selected curtains can give your room a bright, interesting makeover. They can uplift 
+                your mood and even help relax your mind. We are located at Vikas Nagar, Uttarakhand.</p>
+
+        </div>
 </body>
 </html>
