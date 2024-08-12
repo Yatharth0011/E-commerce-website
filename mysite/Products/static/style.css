@@ -111,11 +111,19 @@ body{
     }
     
 }
+
+.cat-body{
+    display: flex;
+    justify-content: center;
+}
+
 .category{
     position: relative;
     top: 120px;
     display: flex;
     justify-content: center;
+    height: 600px;
+    width: 1000px;
 }
 .category ul{
     list-style-type: none;
@@ -132,6 +140,8 @@ body{
     margin: 35px;
     box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
 }
+
+
 .card1{
     background-image: url(assets/card1.webp);
     background-size: cover;
@@ -282,4 +292,173 @@ body{
     position: relative;
     top: 200px;
     border-radius: 15px;
+}
+
+.gal-main{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    width: 1450px;
+}
+
+.gallery ul{
+    list-style-type: none;
+    position: relative;
+    top: 200px;
+    justify-content: center;
+}
+
+.gallery ul li{
+        float: left;
+}
+.gal-img{
+    display: flex;
+    height: 225px;
+    width: 410px;
+    border-radius: 15px;
+    margin: 35px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.arrow-right{
+    height: 50px;
+}
+#arrow-right{
+    height: 50px;
+    position: relative;
+    left: 410px;
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    /* Add any other custom styles you need */
+}
+
+.test-slider{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-slider {
+    position: relative;
+    top: 300px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial {
+    min-width: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1d1d1d;
+    color: goldenrod;
+  }
+
+  .quote{
+    height: 50px;
+    position: absolute;
+    left: 20%;
+    top: 0%;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+}
+
+.map{
+    position: relative;
+    top: 400px;
+    left: 300px;
+}
+
+.details{
+    display: flex;
+    position: relative;
+    left: 300px;
+}
+
+.con-img{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 60px 300px;
+    grid-template-rows: 50px 100px;
+    border: black;
+    position: relative;
+    top: 400px;
+    padding: 20px;    
+}
+
+.container div{
+    padding: 10px;
+}
+
+.con-form{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us-form{
+    position: relative;
+    top: 500px;
+    left: -160px;
+}
+
+.email-area{
+    width: 350px;
+    margin:10px;
+    margin-left: 0px;
+    border-radius: 15px;
+    height: 30px;
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 5px;
+}
+
+.submit-button{
+    width: 100px;
+    background-color: blue;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.message-area{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    top: -200px;
+    left: 100%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 5px;
 }

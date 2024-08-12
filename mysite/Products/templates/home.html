@@ -41,25 +41,28 @@
     <div class="cat-head">
         <h1>Category</h1>
     </div>
-    <div class="category">
-        <ul>
-            <li class="card1"><a href="gallery.html"></a></li>
-            <li class="card2"><a></a></li>
-            <li class="card3"><a></a></li>
-            <li class="card4"><a></a></li>
-            <li class="card5"><a></a></li>
-            <li class="card6"><a></a></li>
-        </ul>
+    <div class="cat-body">
+        <div class="category">
+            <ul>
+                <li class="card1"><a href="gallery.html"></a></li>
+                <li class="card2"><a></a></li>
+                <li class="card3"><a></a></li>
+                <li class="card4"><a></a></li>
+                <li class="card5"><a></a></li>
+                <li class="card6"><a></a></li>
+            </ul>
+        </div>
     </div>
     <div class="prod-head"><h1>Products</h1></div>
     <div class="products">
         <ul class="prod">
             {% for product in products %}
             <li class="prod-card"><img class="prod-image" src="{{product.image}}" alt="image001">
-                <p class="prod-details">{{product.name}}<br>${{product.price}}<br><button class="buy-button">Buy now</button></p></li>
+                <div class="prod-details">{{product.name}}<br>${{product.price}}<br><button class="buy-button">Buy now</button></div></li>
             {% endfor %}
         </ul>
     </div>
+    <div class="about-us-main">
     <h1 style="display: flex;font-family: Fira Sans Condensed, sans-serif;justify-content: center;font-weight: 1200;color: rgb(23, 24, 24);font-size: 40px;position: relative;top: 150px;">About us</h1>
         <div class="about-us">
             <img class="about-us-img" src="{% static 'assets/about-us-img.webp' %}" alt="image001">
@@ -74,5 +77,82 @@
                 your mood and even help relax your mind. We are located at Vikas Nagar, Uttarakhand.</p>
 
         </div>
+    </div>
+    <h1 style="display: flex;font-family: Fira Sans Condensed, sans-serif;justify-content: center;font-weight: 1200;color: rgb(23, 24, 24);font-size: 40px;position: relative;top: 200px;">Gallery</h1>
+    <div class="gal-main">
+        <div class="gallery">
+            <ul>
+                <li><img class="gal-img" src="{% static 'assets/img1.webp' %}" alt="img1"></li>
+                <li><img class="gal-img" src="{% static 'assets/img2.webp' %}" alt="img2"></li>
+                <li><img class="gal-img" src="{% static 'assets/img3.webp' %}" alt="img3"></li>
+                <li><img class="gal-img" src="{% static 'assets/img4.webp' %}" alt="img4"></li>
+                <li><img class="gal-img" src="{% static 'assets/img5.webp' %}" alt="img5"></li>
+                <li><img class="gal-img" src="{% static 'assets/img6.webp' %}" alt="img6"></li> 
+            </ul>
+        </div>
+    </div>
+    <h1 style="display: flex;font-family: Fira Sans Condensed, sans-serif;justify-content: center;font-weight: 1200;color: rgb(23, 24, 24);font-size: 40px;position: relative;top: 200px;">Testimonials</h1>
+    <div class="test-slider">
+    <div class="testimonial-slider">
+        <button id="arrow-right" onclick="nextSlide()"><img class="arrow-right" src="{% static 'assets/arrow-right.png' %}" alt=""></button>
+        <div class="slides">
+          <div class="testimonial">
+            <img src="{% static 'assets/quote.png' %}" class="quote"><p>"This is the first testimonial."</p>
+            <h3>- John Doe</h3>
+          </div>
+          <div class="testimonial">
+            <img src="{% static 'assets/quote.png' %}" class="quote"><p>"This is the second testimonial."</p>
+            <h3>- Jane Smith</h3>
+          </div>
+          <div class="testimonial">
+            <img src="{% static 'assets/quote.png' %}" class="quote"><p>"This is the third testimonial."</p>
+            <h3>- Bob Johnson</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 style="display: flex;font-family: Fira Sans Condensed, sans-serif;justify-content: center;font-weight: 1200;color: rgb(23, 24, 24);font-size: 40px;position: relative;top: 350px;">Contact Us</h1>
+    <div class="contact-us">
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3438.845207422862!2d77.76841917460389!3d30.468822198341023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f2f08f557a5d3%3A0x9918ae62017c2ac0!2sGanga%20Home%20Furnishings!5e0!3m2!1sen!2sin!4v1722617569859!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </div>
+        <div class="details">
+            <div class="container">
+            <div class="item-1"><img src="https://img.icons8.com/?size=100&id=13800&format=png&color=000000" class="con-img" class="grid-item"></div>
+            <div class="item-2"><h5 style="display: flex;font-family: Fira Sans Condensed, sans-serif;justify-content: center;font-weight: 400;color: rgb(23, 24, 24);font-size: 30px;position: relative;;" class="grid-item">Office address</h5></div>
+            <div class="item-3"></div>
+            <div class="item-4" style="padding-left: 60px;"><address>Main Market ,Near Pahari Gali,Chakrata Road, Vikas Nagar Dehradun, Vikas Nagar, Uttarakhand 248198</address></div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="container" style="position: relative; top: 600px; left: -400px;">
+            <div class="item-1"><img src="{% static 'assets/mail.png' %}" class="con-img" class="grid-item"></div>
+            <div class="item-2"><h5 style="display: flex;font-family: Fira Sans Condensed, sans-serif;justify-content: center;font-weight: 400;color: rgb(23, 24, 24);font-size: 30px;position: relative; left: 20px;" class="grid-item">General enquiries</h5></div>
+            <div class="item-3"></div>
+            <div class="item-4" style="padding-left: 60px; font-family:Poppins, sans-serif; font-size: 20px; font-weight:500; color: rgb(68, 68, 68);">gangahomefurnishings@gmail.com</div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="container" style="position: relative; top: 750px; left: -800px;">
+            <div class="item-1"><img src="{% static 'assets/phone.png' %}" class="con-img" class="grid-item"></div>
+            <div class="item-2"><h5 style="display: flex;font-family: Fira Sans Condensed, sans-serif;justify-content: center;font-weight: 400;color: rgb(23, 24, 24);font-size: 30px;position: relative; left: -40px;" class="grid-item">Call Us</h5></div>
+            <div class="item-3"></div>
+            <div class="item-4" style="padding-left: 60px; font-family:Poppins, sans-serif; font-size: 20px; font-weight:500; color: rgb(68, 68, 68);">+91-9528904164 <br> +91-9997642090</div>
+            </div>
+        </div>
+    </div>
+    <div class="con-form">
+        <div class="contact-us-form">
+            <form method="post" action="/Products/">
+            {% csrf_token %}
+                <input type="text" name="name" class="email-area" placeholder="Name"><br>
+                <input type="email" name="email" class="email-area" placeholder="Email"><br>
+                <input type="phone-number" name="phonenum" class="email-area" placeholder="Phone number"><br>
+                <input type="text" name="message" class="message-area" placeholder="Message">
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+<script src="{% static 'script.js' %}"></script>
 </body>
 </html>
